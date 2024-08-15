@@ -1,4 +1,4 @@
-#!/usr/bin/ env bash
+#!/bin/bash
 
 # Define variables
 KEY_NAME="school"
