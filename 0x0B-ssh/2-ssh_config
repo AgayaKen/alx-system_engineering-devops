@@ -1,0 +1,5 @@
+Host 428034-web-01
+    HostName 54.237.216.122
+    User your_username
+    IdentityFile ~/.ssh/school
+    PasswordAuthentication no
