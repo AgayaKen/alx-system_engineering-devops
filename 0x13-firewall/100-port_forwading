@@ -1,0 +1,41 @@
+(Not all processes could be identified, non-owned process info
+ will not be shown, you would have to be root to see it all.)
+Active Internet connections (only servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name    
+tcp        0      0 127.0.0.53:53           0.0.0.0:*               LISTEN      -                   
+tcp        0      0 0.0.0.0:80              0.0.0.0:*               LISTEN      -                   
+tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      -                   
+tcp6       0      0 :::80                   :::*                    LISTEN      -                   
+tcp6       0      0 :::22                   :::*                    LISTEN      -                   
+udp        0      0 127.0.0.53:53           0.0.0.0:*                           -                   
+udp        0      0 10.247.214.147:68       0.0.0.0:*                           -                   
+raw6       0      0 :::58                   :::*                    7           -                   
+Active UNIX domain sockets (only servers)
+Proto RefCnt Flags       Type       State         I-Node   PID/Program name     Path
+unix  2      [ ACC ]     STREAM     LISTENING     43198    2432/systemd         /run/user/1000/systemd/private
+unix  2      [ ACC ]     STREAM     LISTENING     43204    2432/systemd         /run/user/1000/bus
+unix  2      [ ACC ]     STREAM     LISTENING     129614   -                    @/org/kernel/linux/storage/multipathd
+unix  2      [ ACC ]     STREAM     LISTENING     43205    2432/systemd         /run/user/1000/gnupg/S.dirmngr
+unix  2      [ ACC ]     STREAM     LISTENING     43206    2432/systemd         /run/user/1000/gnupg/S.gpg-agent.browser
+unix  2      [ ACC ]     STREAM     LISTENING     43207    2432/systemd         /run/user/1000/gnupg/S.gpg-agent.extra
+unix  2      [ ACC ]     STREAM     LISTENING     43208    2432/systemd         /run/user/1000/gnupg/S.gpg-agent.ssh
+unix  2      [ ACC ]     STREAM     LISTENING     43209    2432/systemd         /run/user/1000/gnupg/S.gpg-agent
+unix  2      [ ACC ]     STREAM     LISTENING     43210    2432/systemd         /run/user/1000/pk-debconf-socket
+unix  2      [ ACC ]     STREAM     LISTENING     43211    2432/systemd         /run/user/1000/snapd-session-agent.socket
+unix  2      [ ACC ]     STREAM     LISTENING     487023   -                    /run/snapd.socket
+unix  2      [ ACC ]     STREAM     LISTENING     487024   -                    /run/snapd-snap.socket
+unix  2      [ ACC ]     STREAM     LISTENING     79600    -                    /var/snap/lxd/common/lxd/unix.socket
+unix  2      [ ACC ]     STREAM     LISTENING     14372    -                    /run/lvm/lvmpolld.socket
+unix  2      [ ACC ]     STREAM     LISTENING     14377    -                    /run/systemd/fsck.progress
+unix  2      [ ACC ]     STREAM     LISTENING     14387    -                    /run/systemd/journal/stdout
+unix  2      [ ACC ]     SEQPACKET  LISTENING     14392    -                    /run/udev/control
+unix  2      [ ACC ]     STREAM     LISTENING     20847    -                    /run/acpid.socket
+unix  2      [ ACC ]     STREAM     LISTENING     20861    -                    /run/dbus/system_bus_socket
+unix  2      [ ACC ]     STREAM     LISTENING     20884    -                    /run/uuidd/request
+unix  2      [ ACC ]     STREAM     LISTENING     25994    -                    /var/lib/amazon/ssm/ipc/health
+unix  2      [ ACC ]     STREAM     LISTENING     25995    -                    /var/lib/amazon/ssm/ipc/termination
+unix  2      [ ACC ]     STREAM     LISTENING     103553   -                    /run/systemd/private
+unix  2      [ ACC ]     STREAM     LISTENING     103557   -                    /run/systemd/userdb/io.systemd.DynamicUser
+unix  2      [ ACC ]     STREAM     LISTENING     20878    -                    @ISCSIADM_ABSTRACT_NAMESPACE
+unix  2      [ ACC ]     STREAM     LISTENING     104266   -                    /run/systemd/journal/io.systemd.journal
+
