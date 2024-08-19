@@ -1,8 +1,25 @@
+
 #!/usr/bin/python3
+"""
+Employee TODO List Progress
+
+This script fetches and displays the TODO list progress for a given employee ID using a REST API.
+"""
+
 import requests
 import sys
 
+
 def get_employee_todo_progress(employee_id):
+    """
+    Fetch and display the TODO list progress for a given employee ID.
+
+    Args:
+        employee_id (int): The ID of the employee.
+
+    Returns:
+        None
+    """
     # Define the base URL for the API
     base_url = "https://jsonplaceholder.typicode.com"
 
@@ -25,10 +42,12 @@ def get_employee_todo_progress(employee_id):
     for task in done_tasks:
         print(f"\t {task.get('title')}")
 
+
 if __name__ == "__main__":
     if len(sys.argv) != 2:
-        print("Usage: python script.py <employee_id>")
+        print("Usage: python3 script.py <employee_id>")
         sys.exit(1)
 
     employee_id = int(sys.argv[1])
     get_employee_todo_progress(employee_id)
+
