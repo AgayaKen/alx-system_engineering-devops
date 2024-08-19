@@ -5,17 +5,12 @@ Employee TODO List Progress
 
 This script fetches and displays the TODO list progress for a given employee ID using a REST API.
 """
-
 import requests
 import sys
-
-
 def get_employee_todo_progress(employee_id):
     """
     Fetch and display the TODO list progress for a given employee ID.
-
-    Args:
-        employee_id (int): The ID of the employee.
+    Args: employee_id (int): The ID of the employee.
 
     Returns:
         None
@@ -41,7 +36,6 @@ def get_employee_todo_progress(employee_id):
     print(f"Employee {employee_name} is done with tasks({number_of_done_tasks}/{total_tasks}):")
     for task in done_tasks:
         print(f"\t {task.get('title')}")
-
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:
