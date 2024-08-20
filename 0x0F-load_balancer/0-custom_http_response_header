@@ -12,13 +12,15 @@ sudo systemctl start nginx
 sudo systemctl enable nginx
 
 # Add custom header to Nginx configuration
-sudo bash -c 'echo "server {
+sudo bash -c 'cat > /etc/nginx/sites-available/default <<EOF
+server {
     listen 80;
     server_name _;
     location / {
-        add_header X-Served-By $hostname;
+        add_header X-Served-By \$hostname;
     }
-}" > /etc/nginx/sites-available/default'
+}
+EOF'
 
 # Restart Nginx to apply changes
 sudo systemctl restart nginx
