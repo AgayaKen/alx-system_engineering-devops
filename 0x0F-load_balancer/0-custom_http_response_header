@@ -1,11 +1,16 @@
 #!/usr/bin/env bash
 
+# Exit immediately if a command exits with a non-zero status
+set -e
+
 # Update package list and upgrade all packages
 sudo apt-get update -y
 sudo apt-get upgrade -y
 
-# Install Nginx
-sudo apt-get install nginx -y
+# Check if Nginx is already installed
+if ! command -v nginx &> /dev/null; then
+    sudo apt-get install nginx -y
+fi
 
 # Start and enable Nginx service
 sudo systemctl start nginx
@@ -15,7 +20,7 @@ sudo systemctl enable nginx
 HOSTNAME=$(hostname)
 
 # Add custom header to Nginx configuration
-sudo bash -c "cat > /etc/nginx/sites-available/default <<EOF
+sudo tee /etc/nginx/sites-available/default > /dev/null <<EOF
 server {
     listen 80;
     server_name _;
@@ -23,10 +28,11 @@ server {
         add_header X-Served-By $HOSTNAME;
     }
 }
-EOF"
+EOF
 
 # Restart Nginx to apply changes
 sudo systemctl restart nginx
 
 # Print status
 echo "Nginx configured with custom header X-Served-By"
+
