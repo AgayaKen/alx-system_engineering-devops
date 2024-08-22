@@ -1,2 +1,2 @@
 #!/bin/bash
-chmod a+x "$item"
+chmod 755
